@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Fly Co.</title>
+		 <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/home.css">	
+		<link rel="stylesheet" href="css/geral.css">
+		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/plugins.css">
+		<link rel="stylesheet" href="css/contato.css">
+		<link rel="stylesheet" href="css/portfolio.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/sobre.css">
+		<style type="text/css">
+		.links ul ul{
+			display: none; 
+			position: fixed;
+		}
+		.links ul li:hover > ul{
+			display: block;
+			position: fixed;
+		}
+		.links li:hover li{
+			float: none;
+			font-size: 10px; 
+			display: block;
+		}
+		</style>
+	</head>
+	<body>
+
+		<nav class="menu-responsivo">
+			<ul>
+				<li>Início</li>
+				<li>Sobre</li>
+				<li>Peças</a></li>
+				<li>Contato</li>
+			</ul>
+		</nav>		
+
+		<div class="layout">
+			<header>
+				<div class="container">
+
+					<div class="logo wow slideInLeft" data-wow-duration="1s" data-wow-delay="1s">
+						<img src="images/curitiba.png" alt="Logo Topo Tag">
+						
+					</div>
+
+					<div class="links">
+						<nav>
+							<ul>
+							<li><a href="index.html">Início</a></li>
+							<li><a href="sobre.html">Sobre</a></li>
+							<li><a href="portfolio.html">Peças</a>
+                            <ul>
+                            <li><a href="blusas.html">Blusas</a></li>
+                            <li><a href="camisas.html">Camisas</a></li>
+                            <li><a href="eletronicos.html">Eletronicos</a></li>
+                            <li><a href="outros.html">Outros</a></li>
+                            </ul>
+							</li>
+							<li><a href="contato.html">Contato</a></li>
+						</ul>
+						</nav>
+
+						<a class="toggle" href="javascript:;">
+							<span></span>
+							<span></span>
+							<span></span>
+						</a>
+
+						<ul class="social">
+							<li class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
+								<a href="https://www.facebook.com/FLy-co-332958640246461"><img src="face.jpg" target="_blank""></a>
+							</li>
+
+							<li class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.9s">
+								<a href="https://github.com/Redlb" target="_blank"><i class="fa fa-github-alt"></i></a>
+							</li>
+						</ul>
+					</div>
+
+					<h1><strong>Fly </strong> clothes <strong> Co.</strong></h1>
+
+					<p>Clothes // Caps // Lean Six sigma</p>
+
+				</div>
+				
+			</header>
+			
+			<main>
+				<section class="sobre">
+					<div class="container">
+						<div class="itens">			
+							
+							<div class="foto wow flipInX" data-wow-duration="1s" data-wow-delay="5s">
+								<img src="images/NINJA.png" alt="Foto TAG">
+							</div>
+
+							<div class="icone-lapis wow flipInX" data-wow-duration="1s" data-wow-delay="1s">
+								<i class="fa fa-pencil"></i>
+							</div>
+
+							<div class="icone-codigo wow flipInX" data-wow-duration="1s" data-wow-delay="2s">
+								<i class="fa fa-code"></i>
+							</div>
+
+							<div class="icone-coracao wow flipInX" data-wow-duration="1s" data-wow-delay="3s">
+								<i class="fa fa-heart"></i>
+							</div>
+
+							<div class="icone-compartilhar wow flipInX" data-wow-duration="1s" data-wow-delay="4s">
+								<i class="fa fa-share-alt"></i>
+							</div>
+						</div>
+
+						<div class="textos">
+							<p><strong>Lorem ipsum dolor sit amet</strong>, consectetur adipisicing elit. Aut in laborum, quos corrupti omnis ipsum reiciendis? Aspernatur, sequi eius! Nobis veniam eius autem dolores, doloribus deserunt est ex ea voluptatem.</p>
+
+							<a href="#" class="botao medio"><i class="fa fa-eye"></i> Continue Lendo</a>
+						</div>
+					</div>
+				</section>
+			</main>
+		       <div align=center><img src='https://contador.s12.com.br/img-60YDzY4909d82A2W-50.gif' border='0' alt='contador de visitantes'></a><script type='text/javascript'</script></script></div>
+			
+			<footer>
+				<div class="logo-rodape">
+					
+						<img src="images/Prefeitura.jpg" alt="Logo TAG Rodapé">
+					
+					<p>2018 Todos os Direitos Reservados</p>
+				</div>
+			</footer>
+		</div>
+
+		<script src="js/jquery.min.js"></script>
+		<script src="js/wow.min.js"></script>
+		<script>
+			$(function(){				
+				$('.toggle').click(function(){
+					$('.layout').toggleClass('ativo');
+					$('.menu-responsivo').toggleClass('ativo');
+					$(this).toggleClass('ativo');
+				});
+				new WOW().init();
+			});
+
+			var host = "https://github.com/Redlb"
+			if (window.location.host == host && window.location.protocol != "https:") {
+			  window.location.protocol = "https:"
+			}
+		</script>
+	</body>
+</html>
